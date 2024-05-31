@@ -1,0 +1,134 @@
+// main: ../style.less
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4.2rem auto;
+    width: 100%;
+    max-width: 770px;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+
+        background-color: @black;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+
+        @media @mobile-sm {
+            display: none;
+        }
+    }
+
+    @media @mobile-sm {
+        margin: 2.6rem auto 0;
+    }
+}
+
+.timeline__col {
+    width: 50%;
+
+    &--left {
+        text-align: right;
+        padding-right: 3.2rem;
+
+        @media @mobile-sm {
+            text-align: center;
+            padding-right: 0;
+        }
+    }
+    &--right {
+        padding-left: 3.2rem;
+
+        @media @mobile-sm {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+}
+
+.timeline__title {
+    margin-bottom: 2.6rem;
+
+    font-size: 1.2rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.timeline__item {
+    margin-bottom: 2.6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+
+        @media @mobile-sm {
+            margin-bottom: 2.6rem;
+        }
+    }
+
+    &--award {
+        display: flex;
+
+        @media @mobile {
+            display: block;
+        }
+    }
+}
+
+.timeline__award-col {
+    padding-left: 3.2rem;
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    @media @mobile {
+        padding-left: 0;
+    }
+}
+
+.timeline__date {
+    display: block;
+    margin-bottom: .8rem;
+
+    text-decoration: underline;
+    font-size: .94rem;
+    color: @black;
+}
+
+.timeline__subtitle {
+    margin-bottom: .2rem;
+
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.timeline__sub-subtitle {
+    font-size: .94rem;
+    color: @black;
+    font-style: italic;
+}
+
+.timeline__text {
+    margin-top: .8rem;
+    font-size: .8rem;
+    line-height: 1.5;
+    color: @gray;
+    font-weight: 300;
+
+    p:last-child{
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 14px;
+        fill: #332f30;
+        text-anchor: middle;
+        font-family: FontAwesome;
+      }
+    </style>
+  </defs>
+  <text id="star" class="cls-1" x="4.121" y="12.419"><tspan x="4.121"></tspan></text>
+</svg>

@@ -1,0 +1,76 @@
+// main: ../style.less
+
+.tab-content {
+    padding: 1rem 2rem;
+    display: none;
+}
+
+.tab-content__header {
+    font-size: 1rem;
+    color: @black;
+    font-weight: 600;
+}
+
+.tab-content__text {
+    padding-top: 1rem;
+
+    font-size: 1rem;
+    color: @gray;
+    font-weight: 300;
+}
+
+.active {
+    display: block;
+}
+
+.tab__item {
+    border: .1rem solid @gray-light;
+    margin-bottom: .5rem;
+}
+
+.tab__header {
+    padding: 1rem 2rem;
+    position: relative;
+
+    border-bottom: .1rem solid @gray-light;
+    cursor: pointer;
+}
+
+.tab__link {
+    margin-right: 2rem;
+    position: relative;
+
+    font-size: .93rem;
+    color: @gray-light;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: color .1s linear;
+
+    &:hover {
+        color: @black;
+    }
+
+    &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: @black;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+
+        transition: width .1s linear;
+    }
+}
+
+.tab--active {
+    color: @black;
+
+    &:after {
+        width: 100%;
+    }
+}
